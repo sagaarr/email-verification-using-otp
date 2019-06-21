@@ -44,13 +44,13 @@ router.get("/email/:id",(request,response) => {
                 var transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                      user: 'story.1book@gmail.com',
-                      pass: 'artist317'
+                      user: '#######',
+                      pass: '#######'
                     }
                   });
                   
                   var mailOptions = {
-                    from: 'story.1book@gmail.com',
+                    from: '######',
                     to: data.email,
                     subject: 'Email verification magic link',
                     text: `Please verify your link ==> ${data.otp}   http://localhost:3000/verify/email/${data._id}`
